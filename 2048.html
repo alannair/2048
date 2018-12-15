@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>2048 Game</title>
+  </head>
+
+  <body>
+    <center>
+      <button style="cursor: pointer; padding-right: 10%;" onclick = "openform();">Grid Size</button>
+      <div id="myForm">
+          <input type="radio" name="dimensions" value=3>3x3
+          <input type="radio" name="dimensions" value=4>4x4
+          <input type="radio" name="dimensions" value=5>5x5
+          <input type="button" name="close" onclick="getsize()" value="OK">
+      </div>
+
+
+      <button style="cursor: pointer; padding-left: 10%;" onclick = "load_grid();">new game</button>
+
+
+	    <div id="grid"></div>
+	    <h2>Score : <div style="display:inline;" id="score"></div></h2>
+    </center>
+    <script src="main.js"></script>
+  </body>
+
+</html>
